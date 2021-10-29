@@ -1,0 +1,16 @@
+<!--
+In sub_pub node the argument says if we are converting car or obstacle coordinates.
+Params are fixed values.
+-->
+
+<launch>
+  <node pkg="project1" type="pub_sub" name="pub_sub_car" args="0" />
+  <node pkg="project1" type="pub_sub" name="pub_sub_obs" args="1" />
+  <node pkg="project1" type="compute_distance" name="compute_distance"/>
+  <node pkg="project1" type="custom_msg" name="custom_msg"/>
+  <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" />
+  <param name="latitude_sp" type="double" value="45.6311926152" />
+  <param name="longitude_sp" type="double" value="9.2947495255" />
+  <param name="altitude_sp" type="double" value="231.506675163" />
+  
+</launch>
