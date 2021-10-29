@@ -1,0 +1,29 @@
+Team members:
+10530695 Luca Colombo
+10745757 Riccardo Zanaboni
+---------------------
+
+
+Description of the file:
+
+amcl.launch: launch file used to localize the robot in the given 2d map
+amcl_imu.launch: launch file used to localize the robot in the given 2d map improved through IMUs data
+gmapping.launch: launch file used to create the map using gmapping with visual odometry
+gmapping_optitrack: launch file used to create the map using gmapping with optitrack odometry
+gmapping_imu.launch: launch file used to create the map using gmapping with visual odometry improved through IMUs data
+
+Name of bag used for create the map: 2020-05-14-16-14-37-traj2-os1-t265-pix
+Name of bag used for localization: 2020-05-14-16-09-36-traj1-os1-t265-pix
+
+The structure of tf tree is in the files attached:
+-amcl: view frames_amcl.pdf
+-gmapping: view frames_gmapping.pdf
+
+How start the nodes:
+Inside the launch folder type the command "roslaunch gmapping.launch".
+To start the others launch files, use the same command with the different name of the launch file.
+
+Other things:
+-In the map there are some errors although different parameters are been tested.
+-Pointcloud to laserscan has been used to convert a 3d pointcloud into a 2d laserscan.
+-To fuse visual odometry with imus data we have used the robot pose ekf.
