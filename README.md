@@ -24,7 +24,7 @@ If the parameters are negative or crash_param > unsafe_param the modification is
 - dist: distance between car and obstacle
 - flag: status of the car
 
-**How start the nodes:**
+**How start the nodes:**  
 Inside the launch folder, type command "roslaunch project1.launch"
 
 **Other details:**
@@ -33,7 +33,7 @@ Inside the launch folder, type command "roslaunch project1.launch"
 - If there is a nan, custom_msg publish a message with nan for distance and "GPS signal lost" for flag
 #
 ### Homework 2.
-**Description:**
+**Description:**  
 Firt we have converted the 3D PointCloud to laserscan to use with GMapping and then we have created 2 maps:
 1. The first one using the Optitrack odometry
 2. The second one with the visual odometry  
@@ -56,7 +56,7 @@ Name of bag used for localization: 2020-05-14-16-09-36-traj1-os1-t265-pix
 **Structure of the GMapping tf tree:**
 ![Tf_Tree_GMapping](https://user-images.githubusercontent.com/48442855/139583148-6803c5fd-da0e-4f05-b86f-1bff85e7cbdc.png)
 
-**How start the nodes:**
+**How start the nodes:**  
 Inside the launch folder type the command "roslaunch gmapping.launch".  
 To start the others launch files, use the same command with the different name of the launch file.
 
