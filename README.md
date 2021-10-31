@@ -1,6 +1,6 @@
 # Robotics Projects
 
-*Robotics course projects at Politecnico di Milano
+*Robotics course projects at Politecnico di Milano  
 Developed in collaboration with: @RiccardoZanaboni*
 
 ### Homework 1
