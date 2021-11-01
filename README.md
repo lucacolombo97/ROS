@@ -3,7 +3,7 @@
 *Robotics course projects at Politecnico di Milano  
 Developed in collaboration with: @RiccardoZanaboni*
 
-# Homework 1
+## Homework 1
 
 **Description of the src files:**
 - pub_sub: convert from lla to ENU and publish TF and Odom for both car and obstacle
@@ -36,7 +36,7 @@ Inside the launch folder, type command "roslaunch project1.launch"
 - At the beginning, when obs is not yet started distance is set to -1 so the custom msg is not published
 - If there is a nan, custom_msg publish a message with nan for distance and "GPS signal lost" for flag
 
-# Homework 2.
+## Homework 2.
 
 **Description:**
 
